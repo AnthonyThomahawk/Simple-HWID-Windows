@@ -26,7 +26,7 @@ string GetHWID()
 	stringstream hwidstream;
 	hwidstream << hex << dwSerial; // convert volume serial to hex
 
-	string HWID = string(hwidstream.str().c_str());
+	string HWID = hwidstream.str();
 
 	for (int i = 0; i < HWID.length(); i++) // shift converted serial by 6 characters 
 		HWID[i] += 6; // (you can change this to shift as much as you want)
