@@ -1,7 +1,7 @@
 # Simple-HWID-Windows
 A simple HWID (Hardware-ID) demo for Windows systems that uses GetVolumeInformationA WinAPI function, to get the serial number of Volume C:/ .
 
-# Usage
+# Compile and run
 Probably you can compile this with any C++ compiler, as long as you have the **Windows SDK (usually installed with Visual Studio)**.
 
 
