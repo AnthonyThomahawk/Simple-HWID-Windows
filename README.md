@@ -13,16 +13,22 @@ Be sure to run the binary as an administrator to always get the serial number of
 After you run the program, a command-promt window will open with your HWID, from there you can select it and copy-paste it anywhere you want (for example in your [Silverblade](https://github.com/AnthonyThomahawk/Silverblade-CSGO#hwid-lock) build).
 
 # Using this in your own projects/programs
-Using this in your own windows program is very simple, just copy-paste the function in your source and call it to get the HWID of the system.
-Example :
+Using this in your own windows program is very simple, just include HWIDwin.h in your project/program and then call the GetHWID() function to get the HWID.
+Example program :
 ```c++
-string HWID = GetHWID();
-if (HWID == DesiredHWID)
+#include "HWIDwin.h"
+
+int main()
 {
-  cout << "This computer is authorized !!" << endl;
-}
-else
-{
-  cout << "This computer is not authorized !!" << endl;
+  string DesiredHWID = "someonesHWIDgoeshere"; // the desired HWID of the user
+  string HWID = GetHWID();
+  if (HWID == DesiredHWID)
+  {
+    cout << "This computer is authorized !!" << endl;
+  }
+  else
+  {
+    cout << "This computer is not authorized !!" << endl;
+  }
 }
 ```
