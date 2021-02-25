@@ -14,9 +14,11 @@ After you run the program, a command-promt window will open with your HWID, from
 
 # Using this in your own projects/programs
 Using this in your own windows program is very simple, just include HWIDwin.h in your project/program and then call the GetHWID() function to get the HWID.
+
 Example program :
 ```c++
 #include "HWIDwin.h"
+using namespace std;
 
 int main()
 {
