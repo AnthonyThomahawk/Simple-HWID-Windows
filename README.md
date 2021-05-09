@@ -10,7 +10,7 @@ To compile with visual studio, simply create an empty project then add HWIDdemo.
 
 Be sure to run the binary as an administrator to always get the serial number of the HDD correctly.
 
-After you run the program, a command-promt window will open with your HWID, from there you can select it and copy-paste it anywhere you want (for example in your [Silverblade](https://github.com/AnthonyThomahawk/Silverblade-CSGO#hwid-lock) build).
+After you run the program, a command-promt window will open with your HWID, from there you can select it and copy-paste it anywhere you want.
 
 # Using this in your own projects/programs
 Using this in your own windows program is very simple, just include HWIDwin.h in your project/program and then call the GetHWID() function to get the HWID.
